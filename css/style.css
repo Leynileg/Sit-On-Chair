@@ -21,7 +21,7 @@ body {
 }
 
 .blue_text {
-   color: darkcyan;
+   color: mediumaquamarine;
    font-weight: 700;
 }
 
@@ -60,6 +60,8 @@ ol#header_list li {
    padding: 10px 20px;
 }
 
+/* First selector */
+
 #first_section {
    height: 650px;
    width: 100%;
@@ -67,7 +69,7 @@ ol#header_list li {
 }
 
 .switch_left {
-   color: darkcyan;
+   color: mediumaquamarine;
    font-size: 90px;
    float: left;
    margin: 260px -40px 260px 0;
@@ -104,11 +106,11 @@ h1 {
 }
 
 .first_section_button {
-   background-color: darkcyan;
+   background-color: mediumaquamarine;
    width: 280px;
    height: 55px;
    border: none;
-   font-size: 20px;
+   font-size: 24px;
    border-radius: 10px;
    color: white;
    float: left;
@@ -118,15 +120,82 @@ h1 {
 
 .switch_right {
    display: inline-block;
-   color: darkcyan;
+   color: mediumaquamarine;
    font-size: 90px;
    margin-top: 250px;
    margin-left: 50px;
-   
 }
 
-#photos {
-   height: 300px;
+/* Second Selector */
+
+#second_section {
+   height: 360px;
    width: 100%;
-   background-color: blueviolet;
+   background-color: white;
+}
+
+.text_in_photo {
+   background-color: rgba(255, 255, 255, 0.5);
+   font-weight: 700;
+   height: 30px;
+   margin-top: 160px;
+   padding: 10px 10px 20px 10px;
+}
+
+ .text_line {
+   height: 8px;
+   width: 150px;
+   background-color: mediumaquamarine;
+}
+
+
+#first_photo {
+   width: 329px;
+   height: 225px;
+   background-image: url("../images/box1_img.jpg");
+   margin: 5px 15px 0 75px;
+   float:left;
+}
+
+#second_photo {
+   width: 329px;
+   height: 225px;
+   background-image: url("../images/box2_img.jpg");
+   margin: 5px 15px 0 15px;
+   float: left;
+}
+
+#second_section_container {
+   float: left;
+    width: 329px;
+   height: 240px;
+   border: 1px solid lightgray;
+   margin: 5px 75px 0 15px;
+   display: block;
+}
+
+#second_section_container h2 {
+   padding: 30px 0 0 10px;
+   font-size: 18px;
+}
+
+#second_section_container p.text_line {
+   margin-left: 10px;
+   margin-bottom: 20px;
+}
+
+#second_section_container p {
+   text-align: left;
+   font-size: 15px;
+   color: gray;
+   margin: 0 10px 30px 10px;
+}
+
+/* Price list selector */
+
+#price {
+   width: 100%;
+   height: 500px;
+   background-color: lightgray;
+   opacity: 0.4;
 }
