@@ -122,7 +122,8 @@ h1 {
    display: inline-block;
    color: mediumaquamarine;
    font-size: 90px;
-   margin-top: 250px;
+   margin-top: 240px;
+   margin-bottom: 260px;
    margin-left: 50px;
 }
 
@@ -195,7 +196,229 @@ h1 {
 
 #price {
    width: 100%;
+   height: 700px;
+   background-color: rgb(230, 230, 230);
+}
+
+#price h2 {
+   padding-top: 20px;
+   font-weight: 400;
+   color: dimgray;
+}
+
+.longer_text_line {
+   height: 8px;
+   width: 300px;
+   background-color: mediumaquamarine;
+}
+
+.price_container_gray {
+   border: 2px solid lightgray;
+   width: 300px;
    height: 500px;
+   margin-top: 50px;
+   background-color: whitesmoke;
+   display: inline-block;
+   float: left;
+}
+
+.price_container_blue {
+   border: 3px solid mediumaquamarine;
+   width: 300px;
+   height: 500px;
+   display: inline-block;
+   background-color: mediumaquamarine;
+   float: left;
+   margin: 50px 80px;
+}
+
+.outterBall {
+   width: 50px;
+   height: 50px;
+   border-radius: 100%;
+   border: 2px solid lightgray;
+   position: relative;
+   left: 125px;
+   bottom: 30px;
+   background-color: white;
+}
+
+.innerBall {
+   width: 25px;
+   height: 25px;
+   border-radius: 100%;
    background-color: lightgray;
-   opacity: 0.4;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
+}
+
+.outterBall_blue {
+   width: 50px;
+   height: 50px;
+   border-radius: 100%;
+   border: none;
+   position: relative;
+   left: 125px;
+   bottom: 30px;
+   background-color: mediumaquamarine;
+}
+
+.innerBall_white {
+   width: 25px;
+   height: 25px;
+   border-radius: 100%;
+   background-color: white;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
+}
+
+.priceBall {
+   width: 110px;
+   height: 110px;
+   border-radius: 100%;
+   border: 2px solid lightgray;
+   position: relative;
+   left: 90px;
+   bottom: 70px;
+   background-color: white;
+   text-align: center;
+}
+
+.priceBall_blue {
+   width: 110px;
+   height: 110px;
+   border-radius: 100%;
+   border: 2px solid mediumaquamarine;
+   position: relative;
+   left: 90px;
+   bottom: 70px;
+   background-color: white;
+   text-align: center;
+}
+
+.blue_plan_text {
+   color: mediumaquamarine;
+   width: 100%;
+   text-align: center;
+   font-size: 22px;
+   font-weight: 400;
+   margin-top: 70px;
+   width: 300px;
+   position: relative;
+   bottom: 90px;
+}
+
+.white_plan_text {
+   color: white;
+   width: 100%;
+   text-align: center;
+   font-size: 22px;
+   font-weight: 400;
+   margin-top: 70px;
+   width: 300px;
+   position: relative;
+   bottom: 90px;
+}
+
+.priceBall p {
+   padding-top: 20px;
+   color: darkgray;
+   font-size: 30px;
+   font-weight: 700;
+}
+
+.priceBall_blue p {
+   padding-top: 20px;
+   color: mediumaquamarine;
+   font-size: 30px;
+   font-weight: 700;
+}
+
+.priceBall span {
+   color: darkgray;
+   font-size: 15px;
+   font-weight: 700;
+   margin-bottom: 40px;
+   position: relative;
+   bottom: 10px;
+}
+
+.priceBall_blue span {
+   color: mediumaquamarine;
+   font-size: 15px;
+   font-weight: 700;
+   margin-bottom: 40px;
+   position: relative;
+   bottom: 10px;
+}
+   
+.dark_gray_line {
+   width: 100%;
+   padding: 10px 0;
+   background-color: lightgray;
+   text-align: center;
+   color: gray;
+   font-size: 20px;
+}
+
+.gray_line {
+   width: 100%;
+   background-color: rgb(235,235,235);
+   padding: 10px 0;
+   text-align: center;
+   color: gray;
+   font-size: 20px;
+}
+
+.white_line {
+   width: 100%;
+   padding: 10px 0;
+   background-color: white;
+   text-align: center;
+   color: gray;
+   font-size: 20px;
+}
+
+#green_left_button {
+   width: 120px; 
+   height: 30px;
+   border: none;
+   border-radius: 10px;
+   position: relative;
+   top: 100px;
+   left: 90px;
+   background-color: mediumaquamarine;
+   color: white;
+}
+
+#green_right_button {
+   width: 120px; 
+   height: 30px;
+   border: none;
+   border-radius: 10px;
+   position: relative;
+   top: 10px;
+   left: 90px;
+   background-color: mediumaquamarine;
+   color: white;
+}
+
+.white_button {
+   width: 120px; 
+   height: 30px;
+   border: none;
+   border-radius: 10px;
+   position: relative;
+   top: 60px;
+   left: 90px;
+   background-color: white;
+   color: mediumaquamarine;
 }
