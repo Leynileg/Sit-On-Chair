@@ -80,7 +80,7 @@ ul > li {
 /* First selector */
 
 #first_section {
-   height: 650px;
+   height: 630px;
    width: 100%;
    background: linear-gradient(white, lightgray);
 }
@@ -111,7 +111,7 @@ ul > li {
 h1 {
    font-size: 50px;
    text-align: center;
-   padding: 160px 0 20px 0;
+   padding: 210px 0 20px 0;
    font-weight: 400;
 }
 
@@ -139,15 +139,13 @@ h1 {
    display: inline-block;
    color: mediumaquamarine;
    font-size: 90px;
-   margin-top: 260px;
-   margin-bottom: 260px;
-   margin-left: 50px;
+   margin: 280px 0 260px 50px;
 }
 
 /* Second Selector */
 
 #second_section {
-   height: 360px;
+   height: 380px;
    width: 100%;
    background-color: white;
 }
@@ -171,7 +169,7 @@ h1 {
    width: 329px;
    height: 225px;
    background-image: url("../images/box1_img.jpg");
-   margin: 5px 15px 0 75px;
+   margin: 30px 15px 0 75px;
    float:left;
 }
 
@@ -179,7 +177,7 @@ h1 {
    width: 329px;
    height: 225px;
    background-image: url("../images/box2_img.jpg");
-   margin: 5px 15px 0 15px;
+   margin: 30px 15px 0 15px;
    float: left;
 }
 
@@ -188,7 +186,7 @@ h1 {
     width: 329px;
    height: 240px;
    border: 1px solid lightgray;
-   margin: 5px 75px 0 15px;
+   margin: 30px 75px 0 15px;
    display: block;
 }
 
