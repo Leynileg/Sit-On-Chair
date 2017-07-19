@@ -36,27 +36,45 @@ header {
    float: left;
 }
 
-header ol {
+ ol {
    color: white;
-   list-style: none;
+   list-style-type: none;
+   font-size: 18px;
+   height: 35px;
+   line-height: 200%;
    display: inline-block;
    float: right;
-   padding: 20px 15px;
+    text-align: center;
+   
 }
 
 ol > li {
    float: left;
    list-style: none;
-   padding: 15px 10px;
-   font-weight: 600;
+   font-weight: 700;
+   padding: 7px 20px;
+   display: block;
    
    
 }
 
+ol > li > ul {
+   list-style-type: none;
+   display: none;
+   margin-top: 12px;
+}
 
-ol#header_list li {
-   list-style: none;
-   padding: 10px 20px;
+ol >li:hover > ul {
+   display: block;
+}
+
+ul > li {
+   background-color: black;
+   position: relative;
+   font-size: 18px;
+   padding: 2px 10px;
+   
+
 }
 
 /* First selector */
@@ -64,7 +82,7 @@ ol#header_list li {
 #first_section {
    height: 650px;
    width: 100%;
-   background-color: whitesmoke;
+   background: linear-gradient(white, lightgray);
 }
 
 .switch_left {
@@ -93,7 +111,7 @@ ol#header_list li {
 h1 {
    font-size: 50px;
    text-align: center;
-   padding: 200px 0 20px 0;
+   padding: 160px 0 20px 0;
    font-weight: 400;
 }
 
@@ -121,7 +139,7 @@ h1 {
    display: inline-block;
    color: mediumaquamarine;
    font-size: 90px;
-   margin-top: 240px;
+   margin-top: 260px;
    margin-bottom: 260px;
    margin-left: 50px;
 }
