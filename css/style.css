@@ -62,6 +62,7 @@ ol > li > ul {
    list-style-type: none;
    display: none;
    margin-top: 12px;
+   position: absolute;
 }
 
 ol >li:hover > ul {
@@ -71,6 +72,7 @@ ol >li:hover > ul {
 ul > li {
    background-color: black;
    position: relative;
+   right: 20px;
    font-size: 18px;
    padding: 2px 10px;
    
@@ -86,6 +88,7 @@ ul > li {
 }
 
 .switch_left {
+   display: inline-block;
    color: mediumaquamarine;
    font-size: 90px;
    float: left;
@@ -131,7 +134,7 @@ h1 {
    border-radius: 10px;
    color: white;
    float: left;
-   margin: 30px 0 0 135px;
+   margin: 30px 0 260px 135px;
 }
 
 
@@ -139,7 +142,7 @@ h1 {
    display: inline-block;
    color: mediumaquamarine;
    font-size: 90px;
-   margin: 280px 0 260px 50px;
+   margin: 260px 0 260px 50px;
 }
 
 /* Second Selector */
