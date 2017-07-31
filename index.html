@@ -5,7 +5,7 @@
    <title>Sit On Chair</title>
    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&amp;subset=latin-ext" rel="stylesheet">
    <link rel="stylesheet" href="css/style.css" type="text/css">
-   
+   <script src="js/app.js"></script>
 </head>
 <body>
    <section>
@@ -13,7 +13,7 @@
         <div class="row">
          <p id="header_logo">SIT <span class="blue_text">ON</span> CHAIR</p>
          <nav>
-            <ol>
+            <ol class="list">
                <li>O FIRMIE
                    <ul>
                      <li>Aktualności</li>
@@ -33,14 +33,20 @@
    
    <section id="first_section">
       <div class="row">
-         <p class="switch_left"> < </p>
-         <img src="images/black_chair.png" id="black_chair">
+         <button class="switch_left"> < </button>
+         <div class="main_chair">
+            <ul>
+                 <li><img src="images/1.png"></li>
+                 <li><img src="images/2.png"></li>
+                 <li><img src="images/3.png"></li>
+            </ul>
+         </div>
          <div id="first_section_div">
             <h1>SIT <span class="blue_text">ON</span> OUR <span class="blue_text">CHAIR</span></h1>
             <p class="first_section_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean<br> in consequat metus, vel laoreet lacus. Vestibulum sed eleifend nunc.<br> Pellentesque ipsum justo, dapibus sit amet<br> eros sed, scelerisque elementum magna.</p>
             <input type="button" value="ZOBACZ WIĘCEJ" class="first_section_button">
          </div>
-        <p class="switch_right">></p>
+        <button class="switch_right">></button>
       </div>
    </section>
    
@@ -48,10 +54,10 @@
    
    <section id="second_section">
       <div class="row">
-        <div id="first_photo">
+        <div class="second_section_photos first_photo">
            <div class="text_in_photo">Chair CLAIR <p class="text_line"></p></div>
         </div>
-        <div id="second_photo">
+        <div class="second_section_photos second_photo">
            <div class="text_in_photo">Chair MARGARITA <p class="text_line"></p></div>
         </div>
         <div id="second_section_container">
@@ -64,7 +70,7 @@
       </div>  
    </section>
    
-   <!-- SECTION PRICE -->
+   <!-- PRICE SECTION -->
    
    <section id="price">
       <div class="row">
@@ -113,7 +119,7 @@
       </div>
      </div>
      
-     <!-- SECTION CONTACT -->
+     <!-- CONTACT SECTION -->
      
    </section>
    <section id="contact">
