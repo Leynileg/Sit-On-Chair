@@ -1,0 +1,57 @@
+@import "src/scss/nav";
+@import "src/scss/section_slider";
+@import "src/scss/section_gallery";
+@import "src/scss/section_prices";
+@import "src/scss/section_contact";
+@import "src/scss/footer";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    color: white;
+}
+
+.blue_text {
+   color: mediumaquamarine;
+   font-weight: 700; 
+}
+
+$columns: 12;
+$gap: 10px;
+
+.row {
+    width: 100%;
+    height: auto;
+    margin-bottom: $gap;
+    display: flex;
+    align-items: center;
+    &:after {  
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    [class*="col-"] { 
+        float: left;
+        padding-left: ($gap / 2);
+        padding-right: ($gap / 2);
+        display: flex;
+        justify-content: center; // OŚ X
+        align-items: center; 
+    }
+}
+
+
+@for $i from 1 through $columns {
+    .col-#{$i}-#{$columns} {
+       width: (100% / $columns * $i);
+    }
+}
+

@@ -1,61 +1,61 @@
-document.addEventListener("DOMContentLoaded", function(){
+$(function() {
     
-    // MENU 
-    var list = document.querySelector(".list");
-    var listElements = list.children;
+    //----------- Menu navigation -----------
     
-    for (var i = 0; i < listElements.length; i++) {
-      listElements[i].addEventListener('mouseout', function() {
-            this.firstElementChild.style.display = 'none';
-      });
-    }
+    let $otherNav = $('.list').find('li');
+    let $navList = $('.list').find('li')[0];
+    let $aboutList = $('.about_company');
     
-    for (var i = 0; i < listElements.length; i++) {
-      listElements[i].addEventListener('mouseover', function() {
-          this.firstElementChild.style.display = 'block';
-     });
-   }
+    $($navList).mouseover(() => {
+         $aboutList.show();
+    });
     
+    $($navList).mouseout(() => {
+        $aboutList.hide();
+    });
     
+    //----------- Slider -----------
     
-    // PHOTOS
+    let $leftBtn = $('.switch_left');
+    let $rightBtn = $('.switch_right');
+    let $slider_photos = $('.main_chair').find('li');
+    console.log($slider_photos);
+    let counter = 0;
+    $($slider_photos[counter]).css('display', 'inline-block');
     
-    var photos = document.querySelectorAll(".second_section_photos") 
+    $rightBtn.on('click', () => {
+        counter++;
+        $($slider_photos[counter-1]).fadeOut(0, function() {
+            $($slider_photos[counter]).fadeIn(500);
+            if (counter >= $slider_photos.length) {
+                counter = 0;
+                $($slider_photos[counter]).fadeIn(500);
+            }
+        });    
+    })
     
-    for (var i = 0; i < photos.length; i++) {
-        photos[i].addEventListener("mouseover",function() {
-            var photoElement = this.children;
-            this.firstElementChild.style.display = 'none';
-        })
-    }
-   
-    for (var i = 0; i < photos.length; i++) {
-        photos[i].addEventListener("mouseout",function() {
-            var photoElement = this.children;
-            this.firstElementChild.style.display = 'block';
-        })
-    } 
-    
-    // SLIDER 
-    
-   var next = document.querySelector(".switch_right");
-   var prev = document.querySelector(".switch_left");
-   var list = document.querySelectorAll(".main_chair>ul>li");
-   var counter = 0;
-   list[0].classList.add("visible");
-
-   next.addEventListener('click', function() {
-       list[counter].style.display = 'none';
-       counter++;
-       if (counter >= list.length) counter = 0;
-       list[counter].style.display = 'inline-block';
-   });
- 
-    prev.addEventListener('click', function() {
-        list[counter].style.display = 'none';
+    $leftBtn.on('click', () => {
         counter--;
-        if (counter < 0) counter = list.length - 1;
-        list[counter].style.display = 'inline-block';
+        $($slider_photos[counter+1]).fadeOut(0, function(){
+            $($slider_photos[counter]).fadeIn(500);
+            
+            if (counter < 0) {
+                counter = $slider_photos.length - 1;
+                $($slider_photos[counter]).fadeIn(500);
+            }
+        });
+    })
+    
+    //----------- Gallery -----------
+    
+    let $photos = $('.gallery_section_photos');
+    
+    $photos.mouseover(function() {
+        $(this).children().fadeOut(500, function(){
+            $photos.mouseout(function() {
+                $(this).children().fadeIn(500);
+            })
+        });
     });
     
 });
