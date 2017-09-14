@@ -19,7 +19,6 @@ $(function() {
     let $leftBtn = $('.switch_left');
     let $rightBtn = $('.switch_right');
     let $slider_photos = $('.main_chair').find('li');
-    console.log($slider_photos);
     let counter = 0;
     $($slider_photos[counter]).css('display', 'inline-block');
     
@@ -57,5 +56,4 @@ $(function() {
             })
         });
     });
-    
 });
