@@ -1,16 +1,9 @@
 .contact_section {
     height: 650px;
-    width: 100%;
-}
-
-.contact_container {
     padding-top: 30px;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto; 
 }
 
-#name {
+.input {
    margin: 10px 0 10px 15px;
    width: 100%;
    height: 60px;
@@ -19,17 +12,6 @@
    padding: 10px 10px;
    font-weight: 300;
    border: 1px solid mediumaquamarine;    
-}
-
-#email {
-   margin: 10px 0 10px 15px;
-   width: 100%;
-   height: 60px;
-   font-size: 25px;
-   opacity: 0.7;
-   padding: 10px 10px;
-   font-weight: 300;
-   border: 1px solid mediumaquamarine; 
 }
 
 #message {
@@ -53,34 +35,26 @@
 .contact_chair {
     width: 100%;
     height: auto;
-    position: relative;
-    bottom: 45px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
-    
 }
 
-.contact_personal_data {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    img {
-        width: 50px;
-        height: 50px;
+    #agreement {
+        width: 30px;
+        height: 30px;
         float: left;
         margin-right: 10px;
-        border: 1px solid mediumaquamarine;
         padding: 4px 4px;
     }
-    position: relative;
-    bottom: 0px;
-    color: darkgray;
-    font-size: 22px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-bottom: 35px;
+
+    .agreement_text {
+        color: lightgray;
+        font-size: 22px;
+    }
     
-}
+    
+
 
 .contact_button {
     width: 50%;
@@ -89,4 +63,6 @@
     border: none;
     font-size: 24px;
     border-radius: 6px;
+    color: white;
+    margin-top: 50px;
 }

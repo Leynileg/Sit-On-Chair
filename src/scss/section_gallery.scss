@@ -1,69 +1,63 @@
 .gallery_section {
-    height: 380px;
+    height: 75vh;
     width: 100%;
-}
-
-.gallery_container {
-    padding-top: 30px;
-    width: 1200px;
+    padding-top: 100px;
     margin-left: auto;
     margin-right: auto; 
-}
 
-.text_in_photo {
-   background-color: rgba(255, 255, 255, 0.5);
-   font-weight: 700;
-   height: 50px;
-   padding: 10px 10px 20px 10px;
-   margin-top: 150px;
-   opacity: 1;
-}
+    figure {
+        position: relative;
+        width: 329px;
+        height: 225px; 
 
- .text_line {
-   height: 8px;
-   width: 150px;
-   background-color: mediumaquamarine;
-}
+        &:hover {
+            .caption {
+                opacity: 0;
+            }
+        }
 
+        .caption {
+            width: 100%;
+            position: absolute;
+            bottom: 35px;
+            background-color: rgba(255, 255, 255, 0.5);
+            font-weight: 700;
+            height: 50px;
+            padding: 10px 0 20px 10px;
+            opacity: 1;
+            transition: .5s ease;
+        }
+    }
 
-.gallery_section_photos {
-   width: 329px;
-   height: 225px; 
-}
+    .text_line {
+        height: 8px;
+        width: 200px;
+        background-color: mediumaquamarine;
+    }
 
-
-
-
-.first_photo {
-   background-image: url("../images/box1_img.jpg");
-}
-
-.second_photo {
-   background-image: url("../images/box2_img.jpg");
-}
-
-.gallery_section_text_container {
-   float: left;
-    width: 329px;
-   height: 225px;
-   border: 1px solid lightgray;
-   display: block; 
-   overflow: auto;
-    
-   h2 {
-   padding: 25px 0 0 10px;
-   font-size: 18px;
-   }
-   
-   p.text_line {
-   margin-left: 10px;
-   margin-bottom: 10px;
-   }
-    
-   p {
-   text-align: left;
-   font-size: 15px;
-   color: gray;
-   margin: 0 10px;
-   }
+    .gallery_section_text_container {
+        float: left;
+        width: 329px;
+        height: 225px;
+        border: 1px solid lightgray;
+        display: block; 
+        overflow: auto;
+        
+        h2 {
+            padding: 25px 0 0 10px;
+            font-size: 18px;
+        }
+        
+        p.text_line {
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+            
+        p {
+            text-align: left;
+            font-size: 15px;
+            color: gray;
+            margin: 0 10px;
+        }
+    }
 }
