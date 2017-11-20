@@ -4,7 +4,7 @@ $(function() {
 
     $('.slide:gt(0)').hide();
     
-    setInterval(function() {
+    setInterval( () => {
       $('.slide:first').fadeOut('slow').next().fadeIn('slow').end().appendTo('.main_chair');
     }, 5000)
     

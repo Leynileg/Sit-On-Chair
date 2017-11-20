@@ -49,17 +49,17 @@
             <div class="container">
 
                 <div class="row">
-                    <div class="col-sm-12 col-md-5 col-xs-12">
+                    <div class="col-xs-12 col-sm-12 col-md-5">
                         <ul class="main_chair">
                             <li class="slide"><img src="./images/chair_1.png"></li>
                             <li class="slide"><img src="./images/chair_2.png"></li>
                             <li class="slide"><img src="./images/chair_3.png"></li>
                         </ul>
                     </div>
-                    <div class="col-sm-12 col-md-7 col-xs-12">  
+                    <div class="col-xs-12 col-sm-12 col-md-7">  
                         <div class="slider_text">
                             <h1>
-                                SIT <span class="blue_text">ON </span>OUR <span class="blue_text"> CHAIR</span>
+                                SIT <span class="blue_text">ON </span>OUR<span class="blue_text"> CHAIR</span>
                             </h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in consequat metus, vel laoreet lacus. Vestibulum sed eleifend nunc. Pellentesque ipsum justo, dapibus sit amet eros sed, scelerisque elementum magna.</p>
                             <a href="#"><button>ZOBACZ WIĘCEJ</button></a>
@@ -76,7 +76,7 @@
             <div class="container">
 
                 <div class="row">
-                    <div class="col-sm-4 col-md-4">
+                    <div class="col-xs-12 col-sm-12 col-md-4">
                         <figure class="figure">
                             <img src="./images/photo1.jpg" alt="image 1" class="img-fluid">
                             <figcaption class="figure-caption">
@@ -87,7 +87,7 @@
                             </figcaption>
                         </figure>
                     </div>
-                    <div class="col-sm-4 col-md-4">
+                    <div class="col-xs-12 col-sm-12 col-md-4">
                         <figure class="figure">
                             <img src="./images/photo2.jpg" alt="image 2" class="img-fluid">
                             <figcaption class="figure-caption">
@@ -98,7 +98,7 @@
                             </figcaption>
                         </figure>
                     </div>
-                    <div class="col-sm-4 col-md-4">
+                    <div class="col-xs-12 col-sm-12 col-md-4">
                         <div class="gallery_section_text_container">
                             <h2>Find all inputs</h2>
                             <p class="text_line"></p>
@@ -118,7 +118,7 @@
             <div class="container">
 
                 <div class="row">
-                    <div class="col-sm-12 col-md-12">
+                    <div class="col-xs-9 col-sm-4 col-md-4">
                         <div class="h2_line">
                             <h2>CENNIK</h2>
                             <p class="longer_text_line"></p>
@@ -126,7 +126,7 @@
                     </div>
                 </div>     
                 <div class="row">
-                    <div class="col-sm-4 col-md-4">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
                         <div class="price_container">
                             <div class="outterBall">
                                 <div class="innerBall"></div>
@@ -142,7 +142,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-4 col-md-4">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
                         <div class="price_container blue borderless">
                             <div class="outterBall blue borderless">
                                 <div class="innerBall white"></div>
@@ -159,7 +159,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-4 col-md-4">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
                         <div class="price_container">
                             <div class="outterBall">
                                 <div class="innerBall"></div>
@@ -186,7 +186,7 @@
         <section class="contact_section">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 col-md-12">
+                    <div class="col-xs-9 col-sm-4 col-md-4">
                     <div class="h2_line">
                         <h2>KONTAKT</h2>
                         <p class="longer_text_line"></p>
@@ -194,23 +194,24 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-7 col-md-7">
+                    <div class="col-xs-12 col-sm-7 col-md-7">
                         <form action="" method="post">
-                            <label for="first_name"></label>
-                            <input type="text" name="first_name" id="name" class="input" placeholder="Imię i nazwisko" required></input>
+                            <label for="name"></label>
+                            <input type="text" name="name" id="name" class="input" placeholder="Imię i nazwisko" required></input>
                             <label for="email"></label>
                             <input type="email" name="email" id="email" class="input" placeholder="Email" required></input>
                             <label for="description"></label>
                             <textarea name="description" id="message" placeholder="Wiadomość" required></textarea>
                     </div>
-                    <div class="col-sm-5 col-md-5">
+                    <div class="col-xs-12 col-sm-5 col-md-5">
                         <div class="contact_right_side">
                             <div class="contact_chair">
                                 <img src="images/red_chair.png">
                             </div>
                             <div class="contact_personal_data">
+                                    <label for="agreement" class="agreement_text">Zgadzam się na przetwarzanie<br>danych osobowych</label>
                                 <input type="checkbox" name="agreement" id="agreement" value="" required>
-                                <label for="agreement" class="agreement_text">Zgadzam się na przetwarzanie<br>danych osobowych</label>
+                                
                             </div>
                             <button type="submit" class="contact_button">WYŚLIJ</button>
                         </form>
@@ -219,18 +220,25 @@
                 </div>
             </div>
         </section>
+
+
         <!-- FOOTER SECTION -->
         <footer class="footer_section">
             <div class="container">
 
                 <div class="row text-center">
-                    <p>Copyrights 2014 | All Rights Reserved. - Sit On Chair</p>
-                    <a href="https://www.flickr.com/" target="_blank"><img src="images/flickr.png" class="icon"></a>
-                    <a href="https://www.vimeo.com/" target="_blank"><img src="images/vimeo.png" class="icon"></a>
-                    <a href="https://www.pinterest.com/" target="_blank"><img src="images/pinterest.png" class="icon"></a>
-                    <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" class="icon"></a>
-
-                    <p class="footer_logo">SIT <strong>ON</strong> CHAIR </p>
+                    <div class="col-xs-12 col-sm-3 col-md-3 align-bottom">
+                        <a href="https://www.flickr.com/" target="_blank"><img src="images/flickr.png" class="icon"></a>
+                        <a href="https://www.vimeo.com/" target="_blank"><img src="images/vimeo.png" class="icon"></a>
+                        <a href="https://www.pinterest.com/" target="_blank"><img src="images/pinterest.png" class="icon"></a>
+                        <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" class="icon"></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <p>Copyrights 2014 | All Rights Reserved. - Sit On Chair</p>
+                    </div>  
+                    <div class="col-xs-12 col-sm-3 col-md-3">
+                        <p class="footer_logo">SIT <strong>ON</strong> CHAIR </p>
+                    </div>
                 </div>
 
             </div>

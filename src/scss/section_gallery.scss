@@ -1,14 +1,19 @@
 .gallery_section {
-    height: 75vh;
-    width: 100%;
-    padding-top: 100px;
-    margin-left: auto;
-    margin-right: auto; 
+    margin: 0 -15px;
+    padding: 130px 0;
 
-    figure {
+    .figure {
+        width: 100%;
+        height: auto;
+        max-width: 337px;
+        max-height: 237px; 
         position: relative;
-        width: 329px;
-        height: 225px; 
+        margin: 15px auto;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
 
         &:hover {
             .caption {
@@ -17,12 +22,14 @@
         }
 
         .caption {
-            width: 100%;
             position: absolute;
             bottom: 35px;
             background-color: rgba(255, 255, 255, 0.5);
             font-weight: 700;
-            height: 50px;
+            width: 100%;
+            max-width: 329px;
+            height: auto;
+            max-height: 50px;
             padding: 10px 0 20px 10px;
             opacity: 1;
             transition: .5s ease;
@@ -30,25 +37,26 @@
     }
 
     .text_line {
-        height: 8px;
-        width: 200px;
+        height: 6px;
+        width: 66%;
+        max-width: 200px;
         background-color: mediumaquamarine;
     }
 
     .gallery_section_text_container {
-        float: left;
-        width: 329px;
-        height: 225px;
+        width: 100%;
+        max-width: 337px;
+        height: auto;
+        min-height: 225px;
+        margin: 15px auto;
         border: 1px solid lightgray;
-        display: block; 
-        overflow: auto;
         
         h2 {
             padding: 25px 0 0 10px;
-            font-size: 18px;
+            font-size: 22px;
         }
         
-        p.text_line {
+        .text_line {
             margin-left: 10px;
             margin-bottom: 10px;
         }
@@ -57,7 +65,7 @@
             text-align: left;
             font-size: 15px;
             color: gray;
-            margin: 0 10px;
+            padding: 0 10px;
         }
     }
 }
