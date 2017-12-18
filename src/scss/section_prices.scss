@@ -158,13 +158,14 @@
 
     @media (max-width: 455px) {
         .price_container {
-            margin: 50px 0;
+            margin: 50px auto;
+            max-width: 75%;
         }
     }
 
-    @media (min-width: 455px) and (max-width: 765px) {
+    @media (min-width: 455px) and (max-width: 767px) {
         .price_container {
-            max-width: 60%;
+            max-width: 75%;
             margin: 50px auto;
         }
     }
